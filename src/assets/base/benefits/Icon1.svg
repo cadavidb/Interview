@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.102" height="24.007" viewBox="0 0 24.102 24.007">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_5958" data-name="Rectángulo 5958" width="24.102" height="24.007" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_18033" data-name="Grupo 18033" transform="translate(0 0.001)">
+    <g id="Grupo_18032" data-name="Grupo 18032" clip-path="url(#clip-path)">
+      <path id="Trazado_10772" data-name="Trazado 10772" d="M17,2.85a1,1,0,0,1,1,1V20.006a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V3.85a1,1,0,0,1,1-1Zm0-1H7a2,2,0,0,0-2,2V20.006a2,2,0,0,0,2,2H17a2,2,0,0,0,2-2V3.85a2,2,0,0,0-2-2" fill="#dd141d"/>
+      <line id="Línea_466" data-name="Línea 466" x2="7.656" transform="translate(7.972 14.156)" fill="none" stroke="#dd141d" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"/>
+      <line id="Línea_467" data-name="Línea 467" x2="7.656" transform="translate(7.972 16.074)" fill="none" stroke="#dd141d" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"/>
+      <line id="Línea_468" data-name="Línea 468" x2="7.656" transform="translate(7.972 18.224)" fill="none" stroke="#dd141d" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"/>
+    </g>
+  </g>
+</svg>

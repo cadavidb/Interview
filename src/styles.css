@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.btn-disabled {
+  pointer-events: none;
+  background-color: #575757 !important;
+}
+.alert-error{
+  color:#DD141D;
+  font-size: 11px;
+  margin: 3px;
+}
+.mat-menu-content:not(:empty) {
+  padding: 0 !important;
+  background-color: #EEEEEE !important;
+}
+

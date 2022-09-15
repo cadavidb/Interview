@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.022" height="24.022" viewBox="0 0 24.022 24.022">
+  <g id="IconoB_32Menú_Hamburguesa_" data-name="IconoB_32Menú Hamburguesa " transform="translate(12.011 12.011)">
+    <g id="IconoB_32Menú_Hamburguesa_2" data-name="IconoB_32Menú Hamburguesa " transform="translate(-12.011 -12.011)">
+      <g id="Borde">
+        <path id="Trazado_5122" data-name="Trazado 5122" d="M22.285,16.239H3.215a.375.375,0,0,1-.375-.375.382.382,0,0,1,.375-.375H22.285a.375.375,0,1,1,0,.749Z" transform="translate(-0.713 -3.887)" fill="#575757"/>
+        <path id="Trazado_5123" data-name="Trazado 5123" d="M22.285,27.089H3.215a.375.375,0,1,1,0-.749H22.285a.375.375,0,0,1,0,.749Z" transform="translate(-0.713 -6.61)" fill="#575757"/>
+        <path id="Trazado_5124" data-name="Trazado 5124" d="M22.285,5.159H3.215a.375.375,0,1,1,0-.749H22.285a.375.375,0,0,1,0,.749Z" transform="translate(-0.713 -1.107)" fill="#575757"/>
+        <rect id="Rectángulo_2715" data-name="Rectángulo 2715" width="24.022" height="24.022" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

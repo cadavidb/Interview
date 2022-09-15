@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74.757" height="71.212" viewBox="0 0 74.757 71.212">
+  <defs>
+    <filter id="Trazado_306" x="0" y="0" width="74.757" height="71.212" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_17268" data-name="Grupo 17268" transform="translate(-252.853 -500.751)" opacity="0.9">
+    <g transform="matrix(1, 0, 0, 1, 252.85, 500.75)" filter="url(#Trazado_306)">
+      <path id="Trazado_306-2" data-name="Trazado 306" d="M-78.665-745.142a30.194,30.194,0,0,1,42.3,1.637,29.324,29.324,0,0,1,2.638,36.968,8.161,8.161,0,0,0,6.447,4.206,1.872,1.872,0,0,1,1.709,1.366,1.848,1.848,0,0,1-.773,2.035c-6.558,4.313-13.9,3.111-18.142,1.787a30.382,30.382,0,0,1-18.378,3.02,29.708,29.708,0,0,1-17.456-9.169A29.427,29.427,0,0,1-78.665-745.142Z" transform="translate(94.26 759)" fill="#dd141d"/>
+    </g>
+    <g id="Grupo_589" data-name="Grupo 589" transform="translate(262.701 510.714)">
+      <text id="_Necesita_Ayuda_" data-name="¿Necesita 
+Ayuda?" transform="translate(26.505 23.359)" fill="#fff" stroke="#fff" stroke-width="0.1" font-size="12" font-family="RobotoCondensed-Bold, Roboto Condensed" font-weight="700"><tspan x="-25" y="0">¿Necesita </tspan><tspan x="-17" y="14">Ayuda?</tspan></text>
+    </g>
+  </g>
+</svg>

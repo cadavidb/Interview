@@ -1,0 +1,49 @@
+<app-header-benefits></app-header-benefits>
+
+<div class="main">
+  <section id="container">
+    <div id="card-container">
+      <img src="/assets/base/benefits/banner.png" alt="" />
+
+      <div id="description">
+        <h2>Beneficios y características</h2>
+        <div class="item">
+          <img src="/assets/base/benefits/Icon1.svg" alt="" />
+          <p>
+            Genere imgresos realizando compras en la tienda virtual y reciba
+            entre el 2% y el 4% en devolución de la compra.
+          </p>
+        </div>
+        <div class="item">
+          <img src="/assets/base/benefits/Icon2.svg" alt="" />
+          <p>Aprenda cómo posicionar su negocio en nuestra escuela.</p>
+        </div>
+        <div class="item">
+          <img src="/assets/base/benefits/Icon3.svg" alt="" />
+          <p>Acceda a informes detallados de su botón de pagos.</p>
+        </div>
+        <div class="item no-border">
+          <img src="/assets/base/benefits/Icon4.svg" alt="" />
+          <p>Obtenga estos beneficios de manera gratis y sin algún costo.</p>
+        </div>
+        <div class="item terms no-border">
+          <label class="checkbox-custom"
+            >Autorizo el descuento por suscripción aceptando los
+            <a href=""> Términos y condiciones. </a>
+            <input
+              type="checkbox"
+              [(ngModel)]="acceptedTerms"
+              (change)="changeTerms($event)"
+            />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <input
+          [ngClass]="{ 'btn-disabled': !acceptedTerms }"
+          type="button"
+          value="Contratar"
+        />
+      </div>
+    </div>
+  </section>
+</div>

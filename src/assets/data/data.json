@@ -1,0 +1,72 @@
+{
+  "data": {
+    "typesDocument": {
+      "types": [
+        {
+          "id": "Q3JlYXRlZEF0OjE=",
+          "name": "Cédula de Ciudadanía",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjI=",
+          "name": "Cédula de Extranjería",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjM=",
+          "name": "Pasaporte",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        }
+      ]
+    },
+    "streets": {
+      "types": [
+        {
+          "id": "Q3JlYXRlZEF0OjE=",
+            "name": "Calle",
+            "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjI=",
+          "name": "Carrera",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjM=",
+          "name": "Avenida",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjQ=",
+          "name": "Diagonal",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjU=",
+            "name": "Transversal",
+            "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0OjY=",
+            "name": "Manzana",
+            "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0Ojc=",
+            "name": "Vereda",
+            "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0Ojg=",
+          "name": "Circunvalar",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        },
+        {
+          "id": "Q3JlYXRlZEF0Ojk=",
+          "name": "Autopista",
+          "createdAt": "2019-03-27T18:00:00.000Z"
+        }
+      ]
+    }
+  }
+}

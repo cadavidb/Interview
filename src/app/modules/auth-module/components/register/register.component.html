@@ -1,0 +1,214 @@
+<app-header-register></app-header-register>
+<div class="main" fxLayoutAlign="start center" fxLayout="column">
+  <div class="card">
+    <form
+      fxLayout="column"
+      [formGroup]="registerForm"
+      *ngIf="(Data$ | async).data as data"
+    >
+      <h4>Ingrese los siguientes datos</h4>
+
+      <div class="field-form" fxLayout="column">
+        <label>Escriba su nombre completo</label>
+        <input
+          placeholder="Nombre completo"
+          formControlName="name"
+          class="capitalize"
+        />
+        <div class="line"></div>
+      </div>
+      <div class="field-form" fxLayout="column">
+        <label>Seleccione tipo de documento</label>
+        <div
+          fxLayout="row"
+          fxLayoutAlign="space-between center"
+          class="select-box"
+        >
+          <div fxFlex="100">
+            <button class="btn-select" mat-button [matMenuTriggerFor]="menu">
+              {{ registerForm.get("typeDocument")?.value }}
+            </button>
+            <mat-menu #menu="matMenu">
+              <button
+                (click)="selectDocumentType(type)"
+                [value]="type.name"
+                mat-menu-item
+                *ngFor="let type of data.typesDocument?.types"
+              >
+                {{ type.name }}
+              </button>
+            </mat-menu>
+          </div>
+          <img src="/assets/base/down.svg" width="20" height="20" />
+        </div>
+
+        <div class="line"></div>
+      </div>
+
+      <div class="field-form" fxLayout="column">
+        <label>Escriba número de documento </label>
+        <input
+          type="number"
+          placeholder="número de documento"
+          formControlName="document"
+        />
+        <div class="line"></div>
+      </div>
+
+      <div class="field-form" fxLayout="column">
+        <label>Escriba ciudad o municipio</label>
+        <input
+          type="text"
+          formControlName="city"
+          placeholder="Ingrese el nombre"
+          (input)="searchCity()"
+        />
+
+        <div
+          class="box-items"
+          [ngClass]="{ 'box-full': ListSuggest.length > 0 }"
+          fxLayout="column"
+          fxLayoutGap="8px"
+          *ngIf="suggestionCities$ | async as ListSuggest"
+        >
+          <span
+            (click)="selectCity(suggest)"
+            *ngFor="let suggest of ListSuggest"
+            >{{ suggest.departamento }} - {{ suggest.municipio }}</span
+          >
+        </div>
+
+        <div class="line"></div>
+      </div>
+      <ng-container> </ng-container>
+
+      <div
+        class="field-address"
+        fxLayout="row"
+        fxLayoutGap="10px"
+        formGroupName="address"
+      >
+        <div class="address">
+          <div class="trigger" (click)="triggerAdress()"></div>
+          <label>Dirección</label>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="space-between center"
+            fxLayoutGap="5px"
+            style="position: relative"
+          >
+            <div
+              *ngIf="showAddress"
+              class="box-items-address"
+              fxLayout="column"
+              fxLayoutGap="8px"
+            >
+              <span
+                *ngFor="let type of data.streets?.types"
+                (click)="selectAddress(type)"
+                >{{ type.name }}</span
+              >
+            </div>
+            <div *ngIf="!showAddress" fxLayoutGap="8px">
+              <span style="font-weight: bold">{{
+                registerForm.get("address")?.get("street")?.value
+              }}</span>
+              <img src="/assets/base/down.svg" width="20" height="20" />
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div
+          class="list-fields-numbers"
+          fxlayout="row"
+          fxLayoutAlign="end end"
+          fxLayoutGap="10px"
+        >
+          <div>
+            <input
+              min="1"
+              pattern="^[0-9]+"
+              type="number"
+              class="field-number"
+              formControlName="numberOne"
+            />
+            <div class="line"></div>
+          </div>
+          <span class="simbol">#</span>
+          <div>
+            <input
+              type="number"
+              min="1"
+              pattern="^[0-9]+"
+              class="field-number"
+              formControlName="numberTwo"
+            />
+            <div class="line"></div>
+          </div>
+          <span class="simbol">-</span>
+          <div>
+            <input
+              type="number"
+              min="1"
+              pattern="^[0-9]+"
+              class="field-number"
+              formControlName="complement"
+            />
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field-form mt-1" fxLayout="column">
+        <label>Local / Tienda / Barrio / Otro</label>
+        <input formControlName="optionalAddress" placeholder="Opcional" />
+        <div class="line"></div>
+      </div>
+
+      <div class="field-form" fxLayout="column">
+        <label>Número de celular</label>
+        <input
+          min="1"
+          pattern="^[0-9]+"
+          formControlName="phone"
+          type="number"
+          placeholder="Escriba el numero"
+        />
+        <div class="line"></div>
+
+        <ng-template
+          [ngTemplateOutlet]="warning"
+          [ngTemplateOutletContext]="{
+            control: registerForm.controls['phone'],
+            message: 'El contacto debe iniciar con el número 3.'
+          }"
+        ></ng-template>
+      </div>
+    </form>
+  </div>
+
+  <button
+    class="btn-create"
+    (click)="register()"
+    [ngClass]="{ 'btn-disabled': registerForm.invalid }"
+  >
+    Crear
+  </button>
+  <img
+    [ngClass]="{
+      'img-float-error': registerForm.controls['phone'].hasError('pattern')
+    }"
+    class="img-float"
+    src="assets/base/help.svg"
+  />
+</div>
+
+<ng-template #warning let-control="control" let-message="message">
+  <div
+    *ngIf="control?.hasError('pattern') && control?.touched"
+    class="alert-error"
+  >
+    {{ message }}
+  </div>
+</ng-template>
