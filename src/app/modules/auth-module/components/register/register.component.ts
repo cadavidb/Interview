@@ -130,8 +130,9 @@ export class RegisterComponent implements OnInit {
   }
 
   filterSuggestions(query: string, cities: any[]): Observable<any> {
+
     //filter the cities by the query
-    query.toLowerCase();
+    query=query.toLowerCase();
     this.suggestionCities$.next(
       cities.filter(
         (city: any) =>
